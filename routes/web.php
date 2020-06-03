@@ -20,3 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::post('/check-email', 'HomeController@checkEmail')->name('check-email');
+
+Route::post('/check-username', 'HomeController@checkUsername')->name('check-username');
